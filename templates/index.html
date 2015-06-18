@@ -1,9 +1,9 @@
-$def with (falist,topkeys)
+$def with (falist,topkeys,dict)
 <h1>gplist</h1>
 <h2>today gp</h2>
 $for key in topkeys:
         <p>
-            <a href='http://xueqiu.com/S/$key'>hot gp</a>
+            <a href='http://xueqiu.com/S/$key'>$dict[key[2:]]</a>
 $for fa in falist:
         <li>
             <a href="http://xueqiu.com/P/$fa['urlid']">$fa['urlid']  per:$fa['per']%</a>,

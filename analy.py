@@ -22,6 +22,7 @@ def top10():
     l6=l2[0:10]
     for s in l6:
         l4.append(s[1:])
-    
-    return l4[0:10]
+    with open('/home/tig/gpweb/gpdict.pkl','rb') as fi:
+        dic=pickle.load(fi)
+    return (l4[0:10],dic)
 top10()
